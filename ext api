@@ -1,0 +1,26 @@
+secret = 8e6c45ec-2c74-4a13-abe1-a35711559fd9
+report = 55b5ffd2f4cf7902a7c4e1ee
+execution_time =  1438609547
+timezone = UTC
+
+
+curl -X POST https://api.infinario.com/analytics/report \
+   -H "X-Infinario-Secret: PROJECT_SECRET" \
+   -H "Content-Type: application/json" \
+   -d "{
+        \"analysis_id\": \"ANALYSIS_ID\", 
+        \"execution_time\": UNIX_TIMESTAMP,
+        \"timezone\": \"TIMEZONE\"
+   }"
+
+
+curl -X POST https://api.infinario.com/analytics/report \
+   -H "X-Infinario-Secret: 8e6c45ec-2c74-4a13-abe1-a35711559fd9" \
+   -H "Content-Type: application/json" \
+   -d "{
+        \"analysis_id\": \"55b5ffd2f4cf7902a7c4e1ee\", 
+        \"execution_time\": 1438609547,
+        \"timezone\": \"UTC\"
+   }"
+
+
